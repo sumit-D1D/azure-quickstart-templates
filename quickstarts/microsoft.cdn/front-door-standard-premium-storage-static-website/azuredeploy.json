@@ -484,6 +484,7 @@
               },
               "dependsOn": [
                 "[resourceId('Microsoft.Cdn/profiles/afdEndpoints', variables('profileName'), parameters('endpointName'))]",
+                "[resourceId('Microsoft.Cdn/profiles', variables('profileName'))]",
                 "[resourceId('Microsoft.Cdn/profiles/originGroups/origins', variables('profileName'), variables('originGroupName'), variables('originName'))]",
                 "[resourceId('Microsoft.Cdn/profiles/originGroups', variables('profileName'), variables('originGroupName'))]"
               ]
